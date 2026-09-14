@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/hero-setup.jpg" width="620" alt="Paulo Rafael workspace" />
+<img src="./assets/hero-setup.jpg" width="500" alt="Paulo Rafael workspace" />
 
 <br><br>
 
