@@ -7,7 +7,7 @@
 ### Software · Data · Automation · AI Engineering
 
 <p>
-I build systems at the intersection of <b>software, data, automation and artificial intelligence</b> — with a strong focus on clarity, reliability, traceability and practical engineering.
+I build systems at the intersection of <b>software, data, automation and artificial intelligence</b>, with a strong focus on clarity, reliability, traceability and practical engineering.
 </p>
 
 <sub>Warm minimal workspace · focused tools · deliberate systems</sub>
@@ -24,36 +24,60 @@ My foundation is in IT and software. I use AI as an additional engineering layer
 
 I am especially interested in building systems that are **small enough to understand, reliable enough to trust, and structured enough to evolve**.
 
-My current direction connects:
-
-`Software` → `Data` → `Automation` → `AI Engineering` → `Agentic Systems`
-
 ---
 
 ### How I work
 
 I organize work in short, goal-oriented cycles and prefer to develop systems through **small, verifiable increments**.
 
-My general principle is simple:
-
-**understand the problem → build a small increment → validate with evidence → improve the system**
+```mermaid
+flowchart LR
+    A[Understand] --> B[Build a small increment]
+    B --> C[Validate with evidence]
+    C --> D[Improve]
+```
 
 #### Software Engineering
 
-**Understand → Design → Build → Test → Observe → Verify → Version → Improve**
-
 My software workflow combines **Scrum, incremental DevOps, DevSecOps, thin slices and evidence-driven development**.
+
+```mermaid
+flowchart LR
+    A[Understand] --> B[Design]
+    B --> C[Build]
+    C --> D[Test]
+    D --> E[Observe]
+    E --> F[Verify]
+    F --> G[Version]
+    G --> H[Improve]
+```
 
 <details>
 <summary><b>Methodology</b></summary>
 
 <br>
 
-**Scrum**  
-Backlog → Sprint Goal → Execution → Review → Retrospective
+**Scrum**
 
-**Incremental DevOps**  
-Understand → Implement → Test → Observe → Correct → Version → Advance
+```mermaid
+flowchart LR
+    A[Backlog] --> B[Sprint Goal]
+    B --> C[Execution]
+    C --> D[Review]
+    D --> E[Retrospective]
+```
+
+**Incremental DevOps**
+
+```mermaid
+flowchart LR
+    A[Understand] --> B[Implement]
+    B --> C[Test]
+    C --> D[Observe]
+    D --> E[Correct]
+    E --> F[Version]
+    F --> G[Advance]
+```
 
 **DevSecOps**  
 Security, trust boundaries and validation are considered from the beginning instead of being added after implementation.
@@ -85,11 +109,18 @@ Requirements determine architecture. Technology is introduced only when the prob
 
 #### AI Agents
 
-**Vertical → Domain → Manager → Specialists → Skills → Tools → Evals → Governance**
+I approach AI agents as **specialized systems**, not generic assistants. The goal is to create vertical agents with clear responsibilities, domain knowledge, controlled tools and measurable quality.
 
-I approach AI agents as **specialized systems**, not generic assistants.
-
-The goal is to create vertical agents with clear responsibilities, domain knowledge, controlled tools and measurable quality.
+```mermaid
+flowchart LR
+    A[Vertical] --> B[Domain]
+    B --> C[Manager]
+    C --> D[Specialists]
+    D --> E[Skills]
+    E --> F[Tools]
+    F --> G[Evals]
+    G --> H[Governance]
+```
 
 <details>
 <summary><b>Methodology</b></summary>
@@ -99,16 +130,32 @@ The goal is to create vertical agents with clear responsibilities, domain knowle
 **Vertical AI Agents**  
 Start from a specific domain, workflow or professional function instead of starting from the model.
 
-**Domain-First Design**  
-Domain → Problems → Responsibilities → Workflows → Knowledge → Agents → Tools
+**Domain-First Design**
+
+```mermaid
+flowchart LR
+    A[Domain] --> B[Problems]
+    B --> C[Responsibilities]
+    C --> D[Workflows]
+    D --> E[Knowledge]
+    E --> F[Agents]
+    F --> G[Tools]
+```
 
 **Agents by Function**  
 Agents are defined by responsibility — such as Planner, Researcher, Evaluator or Visual Director — rather than by the application they use.
 
-**Factory over Assistant**  
-The architecture evolves from a chatbot into a coordinated production system:
+**Factory over Assistant**
 
-Human → Manager → Specialized Agents → Skills → Tools → Artifacts → Evaluation
+```mermaid
+flowchart LR
+    A[Human] --> B[Manager]
+    B --> C[Specialized Agents]
+    C --> D[Skills]
+    D --> E[Tools]
+    E --> F[Artifacts]
+    F --> G[Evaluation]
+```
 
 **Manager + Specialists**  
 A manager interprets, decomposes, delegates and integrates work while specialized agents execute bounded responsibilities.
@@ -116,8 +163,16 @@ A manager interprets, decomposes, delegates and integrates work while specialize
 **Skills Architecture**  
 Reusable capabilities are documented, tested and versioned independently from the agent using them.
 
-**Human-in-the-loop AI**  
-Problem → AI Proposal → Human Review → Execution → Evidence → Adjustment
+**Human-in-the-loop AI**
+
+```mermaid
+flowchart LR
+    A[Problem] --> B[AI Proposal]
+    B --> C[Human Review]
+    C --> D[Execution]
+    D --> E[Evidence]
+    E --> F[Adjustment]
+```
 
 AI contributes to the work, but does not become the source of truth.
 
@@ -127,8 +182,15 @@ Agent behavior is evaluated for correctness, completeness, tool selection, hallu
 **Governance**  
 Permissions, policies, logs, approvals, auditing and versioning control how the system evolves.
 
-**Sandbox → Eval → Approval → Production**  
-New capabilities are tested and evaluated before becoming part of a production workflow.
+**Controlled Release**
+
+```mermaid
+flowchart LR
+    A[Sandbox] --> B[Eval]
+    B --> C[Human Approval]
+    C --> D[Production]
+    D --> E[Monitoring]
+```
 
 </details>
 
@@ -136,11 +198,17 @@ New capabilities are tested and evaluated before becoming part of a production w
 
 #### Automation
 
-**Manual → Understand → Map → Standardize → Automate → Observe → Improve**
+I prefer to understand and validate a process manually before automating it. Automation should remove friction from a process that already makes sense — not hide a process that is still unclear.
 
-I prefer to understand and validate a process manually before automating it.
-
-Automation should remove friction from a process that already makes sense — not hide a process that is still unclear.
+```mermaid
+flowchart LR
+    A[Manual] --> B[Understand]
+    B --> C[Map]
+    C --> D[Standardize]
+    D --> E[Automate]
+    E --> F[Observe]
+    F --> G[Improve]
+```
 
 <details>
 <summary><b>Methodology</b></summary>
@@ -150,8 +218,17 @@ Automation should remove friction from a process that already makes sense — no
 **Manual Before Automation**  
 Execute the process manually first, understand its decisions and automate only the stable parts.
 
-**Process Mapping**  
-Trigger → Input → Rules → Decision → Action → Output → Failure Path
+**Process Mapping**
+
+```mermaid
+flowchart LR
+    A[Trigger] --> B[Input]
+    B --> C[Rules]
+    C --> D[Decision]
+    D --> E[Action]
+    E --> F[Output]
+    F --> G[Failure Path]
+```
 
 **Incremental Automation**  
 Automation grows one validated step at a time instead of becoming a large opaque workflow.
@@ -189,10 +266,6 @@ Automation is evaluated by measurable improvement, not simply by the fact that i
 
 <br><br>
 
-<b>PLAN → BUILD → TEST → VERIFY → LEARN → AUTOMATE → IMPROVE</b>
-
-<br><br>
-
 <sub>Technology should support the process — not become the process.</sub>
 
 </div>
@@ -205,11 +278,14 @@ Automation is evaluated by measurable improvement, not simply by the fact that i
 
 <img src="https://skillicons.dev/icons?i=windows,vscode,github,powershell,docker&theme=dark" height="42" alt="Daily driver" />
 &nbsp;
-<img src="https://cdn.simpleicons.org/cursor/FFFFFF" width="42" height="42" alt="Cursor" title="Cursor" />
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/codex.png">
+<img src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/codex.png" width="42" height="42" alt="Codex" title="Codex">
+</picture>
 
 <br/><br/>
 
-Windows · VS Code · GitHub · PowerShell · Docker · Cursor
+Windows · VS Code · GitHub · PowerShell · Docker · Codex
 
 </div>
 
@@ -219,11 +295,11 @@ Windows · VS Code · GitHub · PowerShell · Docker · Cursor
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,ts,nodejs,react,astro,tailwind,docker,git&theme=dark" height="42" alt="Core stack" />
+<img src="https://skillicons.dev/icons?i=python,ts,nodejs,react,astro,tailwind,git&theme=dark" height="42" alt="Core stack" />
 
 <br/><br/>
 
-Python · TypeScript · Node.js · React · Astro · Tailwind CSS · Docker · Git
+Python · TypeScript · Node.js · React · Astro · Tailwind CSS · Git
 
 </div>
 
@@ -235,11 +311,11 @@ Python · TypeScript · Node.js · React · Astro · Tailwind CSS · Docker · G
 
 <h4>development</h4>
 
-<img src="https://skillicons.dev/icons?i=js,html,css,linux,npm,vite,figma&theme=dark" height="42" alt="Development tools" />
+<img src="https://skillicons.dev/icons?i=js,html,css,linux,npm,vite&theme=dark" height="42" alt="Development tools" />
 
 <br/><br/>
 
-JavaScript · HTML5 · CSS · Linux · npm · Vite · Figma
+JavaScript · HTML5 · CSS · Linux · npm · Vite
 
 <br/><br/>
 
@@ -312,6 +388,8 @@ n8n · APIs · Webhooks · AI Workflows
 
 <h4>thinking, design & knowledge</h4>
 
+<img src="https://skillicons.dev/icons?i=figma&theme=dark" width="40" height="40" alt="Figma" title="Figma" />
+&nbsp;
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/canva/canva-original.svg" width="40" height="40" alt="Canva" title="Canva" />
 &nbsp;
 <img src="https://cdn.simpleicons.org/pinterest/BD081C" width="40" height="40" alt="Pinterest" title="Pinterest" />
@@ -328,7 +406,7 @@ n8n · APIs · Webhooks · AI Workflows
 
 <br/><br/>
 
-Canva · Pinterest · Obsidian · AFFiNE · Notion · Google Drive · Miro
+Figma · Canva · Pinterest · Obsidian · AFFiNE · Notion · Google Drive · Miro
 
 </div>
 
@@ -340,11 +418,18 @@ Canva · Pinterest · Obsidian · AFFiNE · Notion · Google Drive · Miro
 
 I am strengthening the same technical foundation while moving deeper into **AI engineering, vertical agents, agentic development and intelligent automation**.
 
-<br><br>
+</div>
 
-`IT Foundation` → `Software Engineering` → `Data` → `Automation` → `AI Engineering` → `Agentic Systems`
+```mermaid
+flowchart LR
+    A[IT Foundation] --> B[Software Engineering]
+    B --> C[Data]
+    C --> D[Automation]
+    D --> E[AI Engineering]
+    E --> F[Agentic Systems]
+```
 
-<br><br>
+<div align="center">
 
 <sub>
 The objective is not to collect tools — it is to connect them into systems that are easier to understand, verify and improve.
