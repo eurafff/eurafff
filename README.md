@@ -28,56 +28,30 @@ I am especially interested in building systems that are **small enough to unders
 
 ### How I work
 
-I organize work in short, goal-oriented cycles and prefer to develop systems through **small, verifiable increments**.
+I organize work in short, goal-oriented cycles and develop systems through **small, verifiable increments**. I prefer explicit decisions, observable behavior and evidence over assumptions.
 
-```mermaid
-flowchart LR
-    A[Understand] --> B[Build a small increment]
-    B --> C[Validate with evidence]
-    C --> D[Improve]
-```
+<div align="center">
+<img src="./assets/diagrams/how-i-work.svg" width="100%" alt="How I work sequential diagram" />
+</div>
 
 #### Software Engineering
 
-My software workflow combines **Scrum, incremental DevOps, DevSecOps, thin slices and evidence-driven development**.
+My software workflow combines **Scrum, incremental DevOps, DevSecOps, thin slices and evidence-driven development**. Backlogs and sprint goals organize the work; security, validation and traceability stay inside the engineering cycle from the beginning.
 
-```mermaid
-flowchart LR
-    A[Understand] --> B[Design]
-    B --> C[Build]
-    C --> D[Test]
-    D --> E[Observe]
-    E --> F[Verify]
-    F --> G[Version]
-    G --> H[Improve]
-```
+<div align="center">
+<img src="./assets/diagrams/software-engineering.svg" width="100%" alt="Software engineering sequential diagram" />
+</div>
 
 <details>
 <summary><b>Methodology</b></summary>
 
 <br>
 
-**Scrum**
+**Scrum**  
+I use a prioritized backlog, explicit sprint goals, reviews and retrospectives to keep work bounded and continuously adjustable.
 
-```mermaid
-flowchart LR
-    A[Backlog] --> B[Sprint Goal]
-    B --> C[Execution]
-    C --> D[Review]
-    D --> E[Retrospective]
-```
-
-**Incremental DevOps**
-
-```mermaid
-flowchart LR
-    A[Understand] --> B[Implement]
-    B --> C[Test]
-    C --> D[Observe]
-    D --> E[Correct]
-    E --> F[Version]
-    F --> G[Advance]
-```
+**Incremental DevOps**  
+Each change is implemented in a small scope, tested locally, observed in execution, corrected when needed and versioned before the next evolution.
 
 **DevSecOps**  
 Security, trust boundaries and validation are considered from the beginning instead of being added after implementation.
@@ -109,18 +83,11 @@ Requirements determine architecture. Technology is introduced only when the prob
 
 #### AI Agents
 
-I approach AI agents as **specialized systems**, not generic assistants. The goal is to create vertical agents with clear responsibilities, domain knowledge, controlled tools and measurable quality.
+I approach AI agents as **specialized systems**, not generic assistants. The architecture starts from a vertical and its domain, then assigns clear responsibilities, knowledge, skills, tools, evaluation and governance.
 
-```mermaid
-flowchart LR
-    A[Vertical] --> B[Domain]
-    B --> C[Manager]
-    C --> D[Specialists]
-    D --> E[Skills]
-    E --> F[Tools]
-    F --> G[Evals]
-    G --> H[Governance]
-```
+<div align="center">
+<img src="./assets/diagrams/ai-agents.svg" width="100%" alt="AI agents sequential diagram" />
+</div>
 
 <details>
 <summary><b>Methodology</b></summary>
@@ -130,32 +97,14 @@ flowchart LR
 **Vertical AI Agents**  
 Start from a specific domain, workflow or professional function instead of starting from the model.
 
-**Domain-First Design**
-
-```mermaid
-flowchart LR
-    A[Domain] --> B[Problems]
-    B --> C[Responsibilities]
-    C --> D[Workflows]
-    D --> E[Knowledge]
-    E --> F[Agents]
-    F --> G[Tools]
-```
+**Domain-First Design**  
+Problems, responsibilities, workflows and knowledge are defined before agents and tools are selected.
 
 **Agents by Function**  
 Agents are defined by responsibility — such as Planner, Researcher, Evaluator or Visual Director — rather than by the application they use.
 
-**Factory over Assistant**
-
-```mermaid
-flowchart LR
-    A[Human] --> B[Manager]
-    B --> C[Specialized Agents]
-    C --> D[Skills]
-    D --> E[Tools]
-    E --> F[Artifacts]
-    F --> G[Evaluation]
-```
+**Factory over Assistant**  
+The objective is a coordinated production system where a manager delegates bounded work to specialized agents, skills and tools, producing artifacts that can be evaluated.
 
 **Manager + Specialists**  
 A manager interprets, decomposes, delegates and integrates work while specialized agents execute bounded responsibilities.
@@ -163,18 +112,8 @@ A manager interprets, decomposes, delegates and integrates work while specialize
 **Skills Architecture**  
 Reusable capabilities are documented, tested and versioned independently from the agent using them.
 
-**Human-in-the-loop AI**
-
-```mermaid
-flowchart LR
-    A[Problem] --> B[AI Proposal]
-    B --> C[Human Review]
-    C --> D[Execution]
-    D --> E[Evidence]
-    E --> F[Adjustment]
-```
-
-AI contributes to the work, but does not become the source of truth.
+**Human-in-the-loop AI**  
+AI proposals are reviewed by a human, executed in context and compared against real evidence before they are accepted.
 
 **Evals & QA**  
 Agent behavior is evaluated for correctness, completeness, tool selection, hallucination, policy adherence and output quality.
@@ -182,15 +121,8 @@ Agent behavior is evaluated for correctness, completeness, tool selection, hallu
 **Governance**  
 Permissions, policies, logs, approvals, auditing and versioning control how the system evolves.
 
-**Controlled Release**
-
-```mermaid
-flowchart LR
-    A[Sandbox] --> B[Eval]
-    B --> C[Human Approval]
-    C --> D[Production]
-    D --> E[Monitoring]
-```
+**Controlled Release**  
+New capabilities move through sandbox testing, evaluation and human approval before production, followed by monitoring.
 
 </details>
 
@@ -200,15 +132,9 @@ flowchart LR
 
 I prefer to understand and validate a process manually before automating it. Automation should remove friction from a process that already makes sense — not hide a process that is still unclear.
 
-```mermaid
-flowchart LR
-    A[Manual] --> B[Understand]
-    B --> C[Map]
-    C --> D[Standardize]
-    D --> E[Automate]
-    E --> F[Observe]
-    F --> G[Improve]
-```
+<div align="center">
+<img src="./assets/diagrams/automation.svg" width="100%" alt="Automation sequential diagram" />
+</div>
 
 <details>
 <summary><b>Methodology</b></summary>
@@ -218,17 +144,8 @@ flowchart LR
 **Manual Before Automation**  
 Execute the process manually first, understand its decisions and automate only the stable parts.
 
-**Process Mapping**
-
-```mermaid
-flowchart LR
-    A[Trigger] --> B[Input]
-    B --> C[Rules]
-    C --> D[Decision]
-    D --> E[Action]
-    E --> F[Output]
-    F --> G[Failure Path]
-```
+**Process Mapping**  
+Every workflow is described through its trigger, inputs, rules, decisions, actions, outputs and failure paths before automation expands.
 
 **Incremental Automation**  
 Automation grows one validated step at a time instead of becoming a large opaque workflow.
@@ -355,18 +272,13 @@ PostgreSQL · SQL · Supabase · Firebase · DuckDB · pandas · Parquet
 <img src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/grok.png" width="40" height="40" alt="Grok" title="Grok">
 </picture>
 &nbsp;
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/codex.png">
-<img src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/codex.png" width="40" height="40" alt="Codex" title="Codex">
-</picture>
-&nbsp;
 <img src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-svg/icons/claudecode-color.svg" width="40" height="40" alt="Claude Code" title="Claude Code" />
 &nbsp;
 <img src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-svg/icons/geminicli-color.svg" width="40" height="40" alt="Gemini CLI" title="Gemini CLI" />
 
 <br/><br/>
 
-ChatGPT · Gemini · Grok · Codex · Claude Code · Gemini CLI
+ChatGPT · Gemini · Grok · Claude Code · Gemini CLI
 
 <br/><br/>
 
@@ -418,18 +330,11 @@ Figma · Canva · Pinterest · Obsidian · AFFiNE · Notion · Google Drive · M
 
 I am strengthening the same technical foundation while moving deeper into **AI engineering, vertical agents, agentic development and intelligent automation**.
 
-</div>
+<br><br>
 
-```mermaid
-flowchart LR
-    A[IT Foundation] --> B[Software Engineering]
-    B --> C[Data]
-    C --> D[Automation]
-    D --> E[AI Engineering]
-    E --> F[Agentic Systems]
-```
+<img src="./assets/diagrams/direction.svg" width="100%" alt="Technical direction sequential diagram" />
 
-<div align="center">
+<br>
 
 <sub>
 The objective is not to collect tools — it is to connect them into systems that are easier to understand, verify and improve.
