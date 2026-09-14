@@ -1,9 +1,5 @@
 <div align="center">
 
-<img src="./assets/hero-setup.jpg" width="500" alt="Paulo Rafael workspace" />
-
-<br><br>
-
 ### Software · Data · Automation · AI Engineering
 
 <p>
