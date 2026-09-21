@@ -1,1 +1,161 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img"><rect width="1200" height="190" rx="22" fill="#1A120E"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L10,5 L0,10 z" fill="#D79A5B"/></marker></defs><text x="600" y="34" text-anchor="middle" fill="#C9B59F" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="18" font-weight="600">Software engineering</text><rect x="32" y="64" width="121" height="74" rx="16" fill="#241914" stroke="#D79A5B" stroke-width="1.6"/><text x="92.5" y="108" text-anchor="middle" fill="#FFF7ED" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="16" font-weight="650">Understand</text><line x1="160" y1="101" x2="170" y2="101" stroke="#D79A5B" stroke-width="2.2" marker-end="url(#arrow)"/><rect x="177" y="64" width="121" height="74" rx="16" fill="#241914" stroke="#D79A5B" stroke-width="1.6"/><text x="237.5" y="108" text-anchor="middle" fill="#FFF7ED" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="16" font-weight="650">Design</text><line x1="305" y1="101" x2="315" y2="101" stroke="#D79A5B" stroke-width="2.2" marker-end="url(#arrow)"/><rect x="322" y="64" width="121" height="74" rx="16" fill="#241914" stroke="#D79A5B" stroke-width="1.6"/><text x="382.5" y="108" text-anchor="middle" fill="#FFF7ED" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="16" font-weight="650">Build</text><line x1="450" y1="101" x2="460" y2="101" stroke="#D79A5B" stroke-width="2.2" marker-end="url(#arrow)"/><rect x="467" y="64" width="121" height="74" rx="16" fill="#241914" stroke="#D79A5B" stroke-width="1.6"/><text x="527.5" y="108" text-anchor="middle" fill="#FFF7ED" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="16" font-weight="650">Test</text><line x1="595" y1="101" x2="605" y2="101" stroke="#D79A5B" stroke-width="2.2" marker-end="url(#arrow)"/><rect x="612" y="64" width="121" height="74" rx="16" fill="#241914" stroke="#D79A5B" stroke-width="1.6"/><text x="672.5" y="108" text-anchor="middle" fill="#FFF7ED" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="16" font-weight="650">Observe</text><line x1="740" y1="101" x2="750" y2="101" stroke="#D79A5B" stroke-width="2.2" marker-end="url(#arrow)"/><rect x="757" y="64" width="121" height="74" rx="16" fill="#241914" stroke="#D79A5B" stroke-width="1.6"/><text x="817.5" y="108" text-anchor="middle" fill="#FFF7ED" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="16" font-weight="650">Verify</text><line x1="885" y1="101" x2="895" y2="101" stroke="#D79A5B" stroke-width="2.2" marker-end="url(#arrow)"/><rect x="902" y="64" width="121" height="74" rx="16" fill="#241914" stroke="#D79A5B" stroke-width="1.6"/><text x="962.5" y="108" text-anchor="middle" fill="#FFF7ED" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="16" font-weight="650">Version</text><line x1="1030" y1="101" x2="1040" y2="101" stroke="#D79A5B" stroke-width="2.2" marker-end="url(#arrow)"/><rect x="1047" y="64" width="121" height="74" rx="16" fill="#241914" stroke="#D79A5B" stroke-width="1.6"/><text x="1107.5" y="108" text-anchor="middle" fill="#FFF7ED" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="16" font-weight="650">Improve</text><text x="600" y="170" text-anchor="middle" fill="#C9B59F" font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="14">small steps · explicit evidence · controlled evolution</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc">
+  <title id="title">Software engineering</title>
+  <desc id="desc">small changes with clear feedback. Understand to Design to Build to Test to Observe to Verify to Version to Improve.</desc>
+
+  <defs>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="5.6" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3.5 L0,7 z" fill="#806F62" fill-opacity=".72"/>
+    </marker>
+  </defs>
+
+  <style>
+    .card {
+      animation: cardPulse 10.4s ease-in-out infinite;
+      animation-delay: var(--delay);
+    }
+    .stepDot {
+      animation: dotPulse 10.4s ease-in-out infinite;
+      animation-delay: var(--delay);
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .label {
+      animation: labelPulse 10.4s ease-in-out infinite;
+      animation-delay: var(--delay);
+    }
+    @keyframes cardPulse {
+      0%, 12%, 100% { stroke-opacity: .48; fill-opacity: .055; }
+      4%, 8% { stroke-opacity: .98; fill-opacity: .14; }
+    }
+    @keyframes dotPulse {
+      0%, 12%, 100% { opacity: .72; transform: scale(1); }
+      4%, 8% { opacity: 1; transform: scale(1.22); }
+    }
+    @keyframes labelPulse {
+      0%, 12%, 100% { opacity: .86; }
+      4%, 8% { opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .card, .stepDot, .label { animation: none; }
+    }
+  </style>
+
+  <rect width="1200" height="190" rx="22" fill="#1A120E"/>
+  <rect x="1" y="1" width="1198" height="188" rx="21" fill="none" stroke="#4B372C" stroke-opacity=".42"/>
+
+  <text x="600" y="29" text-anchor="middle" fill="#E8D8C8"
+        font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"
+        font-size="17" font-weight="650">Software engineering</text>
+  <text x="600" y="48" text-anchor="middle" fill="#A99583"
+        font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"
+        font-size="11.5" font-weight="450">small changes with clear feedback</text>
+
+  
+    <line x1="160.5" y1="99" x2="171.5" y2="99"
+          stroke="#806F62" stroke-opacity=".52" stroke-width="1.35" marker-end="url(#arrow)"/>
+    <line x1="305.0" y1="99" x2="316.0" y2="99"
+          stroke="#806F62" stroke-opacity=".52" stroke-width="1.35" marker-end="url(#arrow)"/>
+    <line x1="449.5" y1="99" x2="460.5" y2="99"
+          stroke="#806F62" stroke-opacity=".52" stroke-width="1.35" marker-end="url(#arrow)"/>
+    <line x1="594.0" y1="99" x2="605.0" y2="99"
+          stroke="#806F62" stroke-opacity=".52" stroke-width="1.35" marker-end="url(#arrow)"/>
+    <line x1="738.5" y1="99" x2="749.5" y2="99"
+          stroke="#806F62" stroke-opacity=".52" stroke-width="1.35" marker-end="url(#arrow)"/>
+    <line x1="883.0" y1="99" x2="894.0" y2="99"
+          stroke="#806F62" stroke-opacity=".52" stroke-width="1.35" marker-end="url(#arrow)"/>
+    <line x1="1027.5" y1="99" x2="1038.5" y2="99"
+          stroke="#806F62" stroke-opacity=".52" stroke-width="1.35" marker-end="url(#arrow)"/>
+  
+    <g class="node n1" style="--delay:0.00s">
+      <rect class="card" x="32.0" y="63" width="124.5" height="72" rx="15"
+            fill="#7F9BC8" fill-opacity=".055" stroke="#7F9BC8" stroke-opacity=".48" stroke-width="1.25"/>
+      <circle class="stepDot" cx="94.3" cy="82" r="6.2" fill="#7F9BC8" fill-opacity=".78"/>
+      <text x="94.3" y="85.2" text-anchor="middle" fill="#1A120E"
+            font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"
+            font-size="8.5" font-weight="800">01</text>
+      <text class="label" x="94.3" y="113" text-anchor="middle" fill="#FFF7ED"
+            font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"
+            font-size="13.4" font-weight="620">Understand</text>
+    </g>
+    <g class="node n2" style="--delay:1.05s">
+      <rect class="card" x="176.5" y="63" width="124.5" height="72" rx="15"
+            fill="#7F9BC8" fill-opacity=".055" stroke="#7F9BC8" stroke-opacity=".48" stroke-width="1.25"/>
+      <circle class="stepDot" cx="238.8" cy="82" r="6.2" fill="#7F9BC8" fill-opacity=".78"/>
+      <text x="238.8" y="85.2" text-anchor="middle" fill="#1A120E"
+            font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"
+            font-size="8.5" font-weight="800">02</text>
+      <text class="label" x="238.8" y="113" text-anchor="middle" fill="#FFF7ED"
+            font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"
+            font-size="13.4" font-weight="620">Design</text>
+    </g>
+    <g class="node n3" style="--delay:2.10s">
+      <rect class="card" x="321.0" y="63" width="124.5" height="72" rx="15"
+            fill="#D1AD62" fill-opacity=".055" stroke="#D1AD62" stroke-opacity=".48" stroke-width="1.25"/>
+      <circle class="stepDot" cx="383.3" cy="82" r="6.2" fill="#D1AD62" fill-opacity=".78"/>
+      <text x="383.3" y="85.2" text-anchor="middle" fill="#1A120E"
+            font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"
+            font-size="8.5" font-weight="800">03</text>
+      <text class="label" x="383.3" y="113" text-anchor="middle" fill="#FFF7ED"
+            font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"
+            font-size="13.4" font-weight="620">Build</text>
+    </g>
+    <g class="node n4" style="--delay:3.15s">
+      <rect class="card" x="465.5" y="63" width="124.5" height="72" rx="15"
+            fill="#C47A72" fill-opacity=".055" stroke="#C47A72" stroke-opacity=".48" stroke-width="1.25"/>
+      <circle class="stepDot" cx="527.8" cy="82" r="6.2" fill="#C47A72" fill-opacity=".78"/>
+      <text x="527.8" y="85.2" text-anchor="middle" fill="#1A120E"
+            font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"
+            font-size="8.5" font-weight="800">04</text>
+      <text class="label" x="527.8" y="113" text-anchor="middle" fill="#FFF7ED"
+            font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"
+            font-size="13.4" font-weight="620">Test</text>
+    </g>
+    <g class="node n5" style="--delay:4.20s">
+      <rect class="card" x="610.0" y="63" width="124.5" height="72" rx="15"
+            fill="#7F9BC8" fill-opacity=".055" stroke="#7F9BC8" stroke-opacity=".48" stroke-width="1.25"/>
+      <circle class="stepDot" cx="672.3" cy="82" r="6.2" fill="#7F9BC8" fill-opacity=".78"/>
+      <text x="672.3" y="85.2" text-anchor="middle" fill="#1A120E"
+            font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"
+            font-size="8.5" font-weight="800">05</text>
+      <text class="label" x="672.3" y="113" text-anchor="middle" fill="#FFF7ED"
+            font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"
+            font-size="13.4" font-weight="620">Observe</text>
+    </g>
+    <g class="node n6" style="--delay:5.25s">
+      <rect class="card" x="754.5" y="63" width="124.5" height="72" rx="15"
+            fill="#78A883" fill-opacity=".055" stroke="#78A883" stroke-opacity=".48" stroke-width="1.25"/>
+      <circle class="stepDot" cx="816.8" cy="82" r="6.2" fill="#78A883" fill-opacity=".78"/>
+      <text x="816.8" y="85.2" text-anchor="middle" fill="#1A120E"
+            font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"
+            font-size="8.5" font-weight="800">06</text>
+      <text class="label" x="816.8" y="113" text-anchor="middle" fill="#FFF7ED"
+            font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"
+            font-size="13.4" font-weight="620">Verify</text>
+    </g>
+    <g class="node n7" style="--delay:6.30s">
+      <rect class="card" x="899.0" y="63" width="124.5" height="72" rx="15"
+            fill="#D1AD62" fill-opacity=".055" stroke="#D1AD62" stroke-opacity=".48" stroke-width="1.25"/>
+      <circle class="stepDot" cx="961.3" cy="82" r="6.2" fill="#D1AD62" fill-opacity=".78"/>
+      <text x="961.3" y="85.2" text-anchor="middle" fill="#1A120E"
+            font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"
+            font-size="8.5" font-weight="800">07</text>
+      <text class="label" x="961.3" y="113" text-anchor="middle" fill="#FFF7ED"
+            font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"
+            font-size="13.4" font-weight="620">Version</text>
+    </g>
+    <g class="node n8" style="--delay:7.35s">
+      <rect class="card" x="1043.5" y="63" width="124.5" height="72" rx="15"
+            fill="#78A883" fill-opacity=".055" stroke="#78A883" stroke-opacity=".48" stroke-width="1.25"/>
+      <circle class="stepDot" cx="1105.8" cy="82" r="6.2" fill="#78A883" fill-opacity=".78"/>
+      <text x="1105.8" y="85.2" text-anchor="middle" fill="#1A120E"
+            font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"
+            font-size="8.5" font-weight="800">08</text>
+      <text class="label" x="1105.8" y="113" text-anchor="middle" fill="#FFF7ED"
+            font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"
+            font-size="13.4" font-weight="620">Improve</text>
+    </g>
+
+  <text x="600" y="169" text-anchor="middle" fill="#A99583"
+        font-family="Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"
+        font-size="12.5">small changes · visible behavior · evidence before assumptions</text>
+</svg>
