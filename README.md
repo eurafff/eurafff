@@ -25,15 +25,25 @@ I build systems at the intersection of <b>software, data, automation and artific
 
 **AI-native development · intelligent automation · software systems.**
 
-My foundation is in IT and software. I use AI as an additional engineering layer — not as a replacement for fundamentals.
+My background is in IT and software, and lately I have been spending a lot of time learning how AI can become a useful part of the engineering process — without skipping the fundamentals.
 
-I am especially interested in building systems that are **small enough to understand, reliable enough to trust, and structured enough to evolve**.
+I enjoy learning by building, testing ideas, breaking things, fixing them and slowly understanding why something works.
+
+I do not expect to have everything figured out. A big part of what I build is also a way for me to explore, improve my thinking and discover better ways of doing things.
+
+I am especially interested in systems that are **simple enough to understand, reliable enough to trust and structured enough to keep evolving**.
 
 ---
 
 ### How I work
 
-I organize work in short, goal-oriented cycles and develop systems through **small, verifiable increments**. I prefer explicit decisions, observable behavior and evidence over assumptions.
+I like working in small, goal-oriented steps.
+
+Usually I start with something simple, make it work, test it, observe what happens and improve it from there. Small, verifiable increments make it easier for me to understand what changed and why.
+
+I try to keep decisions explicit and systems understandable, while leaving room to experiment and change direction when the evidence points somewhere better.
+
+For me, good engineering is less about having the perfect answer from the beginning and more about **learning, validating assumptions and improving things one step at a time**.
 
 <div align="center">
 <img src="./assets/diagrams/how-i-work.svg" width="100%" alt="How I work sequential diagram" />
@@ -41,7 +51,11 @@ I organize work in short, goal-oriented cycles and develop systems through **sma
 
 #### Software Engineering
 
-My software workflow combines **Scrum, incremental DevOps, DevSecOps, thin slices and evidence-driven development**. Backlogs and sprint goals organize the work; security, validation and traceability stay inside the engineering cycle from the beginning.
+My current software workflow borrows ideas from **Scrum, incremental DevOps, DevSecOps, thin slices and evidence-driven development**.
+
+I do not treat them as rigid rules. They are tools that help me organize the work, reduce uncertainty and keep changes small enough to understand and verify.
+
+What matters most to me is being able to see what changed, why it changed and whether it actually improved the system.
 
 <div align="center">
 <img src="./assets/diagrams/software-engineering.svg" width="100%" alt="Software engineering sequential diagram" />
@@ -53,34 +67,34 @@ My software workflow combines **Scrum, incremental DevOps, DevSecOps, thin slice
 <br>
 
 **Scrum**  
-I use a prioritized backlog, explicit sprint goals, reviews and retrospectives to keep work bounded and continuously adjustable.
+I use a prioritized backlog, clear sprint goals, reviews and retrospectives to keep the work focused while still leaving room to adjust as I learn.
 
 **Incremental DevOps**  
-Each change is implemented in a small scope, tested locally, observed in execution, corrected when needed and versioned before the next evolution.
+I prefer implementing changes in small scopes, testing them locally, observing the result and correcting what needs to change before moving forward.
 
 **DevSecOps**  
-Security, trust boundaries and validation are considered from the beginning instead of being added after implementation.
+I try to think about security, trust boundaries and validation early instead of treating them as something to add only after the system is already built.
 
 **Thin Slices**  
-Large systems are developed through small end-to-end increments that can already be executed, tested and evaluated.
+Breaking larger systems into small end-to-end pieces helps me learn from working software sooner and keeps complexity manageable.
 
 **Evidence-Driven Development**  
-A solution is accepted through evidence: tests, metrics, outputs, logs and observed behavior.
+I prefer validating ideas through things I can observe — tests, metrics, outputs, logs and actual system behavior.
 
 **Separation of Concerns**  
-Input, validation, business logic, persistence and interfaces remain separated so each layer can evolve independently.
+Keeping input, validation, business logic, persistence and interfaces separated makes the system easier for me to reason about and evolve.
 
 **Reproducibility & Logical Idempotency**  
-The same valid input should reproduce the same logical behavior and results.
+When possible, I want the same valid input to reproduce the same logical behavior and results.
 
 **Traceability**  
-Important outputs should be traceable back to their inputs, transformations and versions.
+I like important outputs to have a clear path back to their inputs, transformations and versions.
 
 **Fail-Safe / Fail-Closed**  
-When something cannot be validated safely, preserve it, isolate it and make the failure visible instead of guessing.
+When something cannot be validated safely, I prefer making the uncertainty visible rather than silently guessing.
 
 **Pragmatic Architecture**  
-Requirements determine architecture. Technology is introduced only when the problem justifies it.
+I try to let the requirements guide the architecture and introduce new technology only when the problem gives me a good reason to do so.
 
 </details>
 
@@ -88,7 +102,13 @@ Requirements determine architecture. Technology is introduced only when the prob
 
 #### AI Agents
 
-I approach AI agents as **specialized systems**, not generic assistants. The architecture starts from a vertical and its domain, then assigns clear responsibilities, knowledge, skills, tools, evaluation and governance.
+AI agents are one of the areas I am exploring the most right now.
+
+I tend to think about them as **specialized systems rather than generic assistants**, especially when they are part of a real workflow.
+
+My current approach is to start with the domain and the problem first, then think about responsibilities, knowledge, tools, evaluation and coordination.
+
+This is still an evolving area for me, and a lot of the fun is experimenting with different approaches, seeing where they fail and learning what works better in practice.
 
 <div align="center">
 <img src="./assets/diagrams/ai-agents.svg" width="100%" alt="AI agents sequential diagram" />
@@ -100,34 +120,36 @@ I approach AI agents as **specialized systems**, not generic assistants. The arc
 <br>
 
 **Vertical AI Agents**  
-Start from a specific domain, workflow or professional function instead of starting from the model.
+I usually find it more useful to start with a specific domain, workflow or professional responsibility instead of starting with the model itself.
 
 **Domain-First Design**  
-Problems, responsibilities, workflows and knowledge are defined before agents and tools are selected.
+I try to understand the problem, responsibilities, workflows and knowledge before deciding which agents or tools belong in the system.
 
 **Agents by Function**  
-Agents are defined by responsibility — such as Planner, Researcher, Evaluator or Visual Director — rather than by the application they use.
+I like defining agents around bounded responsibilities — such as Planner, Researcher, Evaluator or Visual Director — rather than around the applications they use.
 
 **Factory over Assistant**  
-The objective is a coordinated production system where a manager delegates bounded work to specialized agents, skills and tools, producing artifacts that can be evaluated.
+One mental model I am exploring is treating an agentic system more like a small coordinated production environment than a single all-purpose assistant.
+
+The idea is that a manager can interpret the objective and delegate smaller responsibilities to specialized agents, skills and tools while keeping the final work observable and reviewable.
 
 **Manager + Specialists**  
-A manager interprets, decomposes, delegates and integrates work while specialized agents execute bounded responsibilities.
+I use this pattern to separate coordination from execution: one component helps decompose and integrate the work while specialists focus on narrower responsibilities.
 
 **Skills Architecture**  
-Reusable capabilities are documented, tested and versioned independently from the agent using them.
+Reusable capabilities make more sense to me when they can be documented, tested and improved independently from any single agent.
 
 **Human-in-the-loop AI**  
-AI proposals are reviewed by a human, executed in context and compared against real evidence before they are accepted.
+I prefer AI proposals to remain part of a reviewable process where a person can inspect the context, compare the result with real evidence and decide what should happen next.
 
 **Evals & QA**  
-Agent behavior is evaluated for correctness, completeness, tool selection, hallucination, policy adherence and output quality.
+I am learning to treat evaluation as part of the system itself, looking at correctness, completeness, tool selection, hallucination, policy adherence and output quality.
 
 **Governance**  
-Permissions, policies, logs, approvals, auditing and versioning control how the system evolves.
+As agentic systems become more capable, I think permissions, policies, logs, approvals and versioning become increasingly important parts of the engineering problem.
 
 **Controlled Release**  
-New capabilities move through sandbox testing, evaluation and human approval before production, followed by monitoring.
+For new capabilities, I prefer starting small, testing them in a controlled environment and expanding only after there is enough evidence that the behavior is useful and predictable.
 
 </details>
 
@@ -135,7 +157,13 @@ New capabilities move through sandbox testing, evaluation and human approval bef
 
 #### Automation
 
-I prefer to understand and validate a process manually before automating it. Automation should remove friction from a process that already makes sense — not hide a process that is still unclear.
+I like understanding a process before trying to automate it.
+
+Sometimes the best first step is simply doing the work manually, noticing where the friction is and learning which parts are actually stable enough to automate.
+
+From there, I prefer growing automation gradually, keeping failures visible and leaving room for human review when something is ambiguous.
+
+The goal for me is not to automate everything — it is to make useful processes **easier to run, understand and improve**.
 
 <div align="center">
 <img src="./assets/diagrams/automation.svg" width="100%" alt="Automation sequential diagram" />
@@ -147,34 +175,34 @@ I prefer to understand and validate a process manually before automating it. Aut
 <br>
 
 **Manual Before Automation**  
-Execute the process manually first, understand its decisions and automate only the stable parts.
+I like executing a process manually first so I can understand its decisions before deciding which parts are worth automating.
 
 **Process Mapping**  
-Every workflow is described through its trigger, inputs, rules, decisions, actions, outputs and failure paths before automation expands.
+Writing down triggers, inputs, rules, decisions, actions, outputs and failure paths helps me see the process more clearly before adding more machinery around it.
 
 **Incremental Automation**  
-Automation grows one validated step at a time instead of becoming a large opaque workflow.
+I prefer automation that grows one validated step at a time instead of becoming a large workflow that is difficult to inspect.
 
 **Event-Driven Workflows**  
-APIs, webhooks, files, schedules, databases and user actions can trigger repeatable flows.
+APIs, webhooks, files, schedules, databases and user actions are useful building blocks when a process benefits from repeatable event-driven execution.
 
 **Idempotency**  
-Reprocessing the same valid event should not create inconsistent state.
+When possible, I design repeated processing so that receiving the same valid event again does not leave the system in an inconsistent state.
 
 **Retry & Recovery**  
-Temporary failures should have controlled retries and clear escalation paths.
+Temporary failures are easier to work with when retry behavior and escalation paths are explicit.
 
 **Rollback**  
-When a workflow changes state, recovery to a previous safe state should be considered.
+When automation changes state, I try to think about what recovery would look like if something goes wrong.
 
 **Human Fallback**  
-Ambiguous or low-confidence situations can return to human review instead of forcing an automated decision.
+For ambiguous or low-confidence situations, I prefer returning the decision to a person instead of forcing the automation to pretend it knows the answer.
 
 **Observability**  
-A workflow should make execution, inputs, outputs, errors, retries and duration visible.
+I want workflows to make their execution understandable: what came in, what happened, what came out, where something failed and how long it took.
 
 **Evidence-Driven Automation**  
-Automation is evaluated by measurable improvement, not simply by the fact that it runs automatically.
+For me, automation is useful when it produces a measurable improvement — not simply because a previously manual step became automatic.
 
 </details>
 
@@ -333,7 +361,9 @@ Figma · Canva · Pinterest · Obsidian · AFFiNE · Notion · Google Drive · M
 
 <div align="center">
 
-I am strengthening the same technical foundation while moving deeper into **AI engineering, vertical agents, agentic development and intelligent automation**.
+I am continuing to strengthen my software foundation while learning more about **AI engineering, vertical agents, agentic development and intelligent automation**.
+
+There is still a lot I want to understand, and that is a big part of what keeps this interesting for me.
 
 <br><br>
 
@@ -342,7 +372,7 @@ I am strengthening the same technical foundation while moving deeper into **AI e
 <br>
 
 <sub>
-The objective is not to collect tools — it is to connect them into systems that are easier to understand, verify and improve.
+I am not trying to collect every tool. I am trying to understand how the pieces fit together — and become a little better at building useful systems along the way.
 </sub>
 
 </div>
