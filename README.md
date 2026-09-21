@@ -6,6 +6,15 @@
 I build systems at the intersection of <b>software, data, automation and artificial intelligence</b>, with a strong focus on clarity, reliability, traceability and practical engineering.
 </p>
 
+<!-- typing-principles:start -->
+<img
+  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=14&duration=2800&pause=1200&color=C9B59F&center=true&vCenter=true&width=700&lines=small+systems+%E2%86%92+clear+behavior+%E2%86%92+measurable+evidence;building+for+clarity+%C2%B7+reliability+%C2%B7+traceability;engineering+before+complexity"
+  alt="Engineering principles"
+/>
+<!-- typing-principles:end -->
+
+<br>
+
 <sub>Warm minimal workspace · focused tools · deliberate systems</sub>
 
 </div>
@@ -354,6 +363,26 @@ The objective is not to collect tools — it is to connect them into systems tha
 <br/><br/>
 
 <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=eurafff&theme=github_dark" alt="GitHub profile details" />
+
+<br/><br/>
+
+<!-- contribution-snake:start -->
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/eurafff/eurafff/output/github-contribution-grid-snake-dark.svg"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/eurafff/eurafff/output/github-contribution-grid-snake.svg"
+  />
+  <img
+    width="100%"
+    alt="GitHub contribution animation"
+    src="https://raw.githubusercontent.com/eurafff/eurafff/output/github-contribution-grid-snake.svg"
+  />
+</picture>
+<!-- contribution-snake:end -->
 
 </div>
 
